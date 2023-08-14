@@ -32,7 +32,6 @@ router.use("/profile", profileRoutes);
 
 router.get("/", async (req, res) => {
   try {
-    console.log(2);
     return res.render("index", { user: req.user });
   } catch (e) {
     return res.status(500).send(e);

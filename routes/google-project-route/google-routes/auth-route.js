@@ -64,12 +64,12 @@ router.get(
   })
 );
 
-router.get("");
+// router.get("");
 
-router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
-  console.log("進入redirect區域");
-  return res.redirect("/api/googleProject/profile");
-});
+// router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
+//   console.log("進入redirect區域");
+//   return res.redirect("/api/googleProject/profile");
+// });
 
 router.get("/google/redirect", passport.authenticate("google"), (req, res) => {
   console.log("進入redirect區域");

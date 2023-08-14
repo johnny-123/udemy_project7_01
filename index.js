@@ -28,7 +28,6 @@ app.use(cors());
 //   courseRoute
 // );
 app.use("/api/googleProject", googleRoute);
-console.log(3);
 app.listen(port, () => {
   console.log("後端伺服器正在聆聽port 8080...");
 });
